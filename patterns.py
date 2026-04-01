@@ -176,3 +176,37 @@ for i in range(n-1):
     for j in range(i+1):
         print("*", end=" ")
     print()
+    
+
+'''
+    *
+   * *
+  * * *
+'''
+
+n = 5
+for i in range(1, n + 1):
+    # Create the stars with a space after each one
+    row_stars = "* " * i
+    
+    # Strip the very last trailing space so it centers perfectly
+    row_stars = row_stars.strip()
+    
+    # Center it based on the width of the bottom row
+    print(row_stars.center(n * 2))
+for i in range(n-1,0,-1):
+    # Create the stars with a space after each one
+    row_stars = "* " * i
+    
+    # Strip the very last trailing space so it centers perfectly
+    row_stars = row_stars.strip()
+    
+    # Center it based on the width of the bottom row
+    print(row_stars.center(n * 2))
+# for row in range(n):
+#     results = ''
+#     for col in range(row+1):
+#         results += '*'
+#     if row < n-1:
+#         results += '\n'
+#     print(results.center(n))

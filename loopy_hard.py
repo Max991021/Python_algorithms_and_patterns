@@ -19,8 +19,10 @@ def market_revenue(transactions):
 def longest_unique_word(sentence):
 
     # TODO
+   
+    return sorted(sentence.split(), key=len)[-1] if sentence != '' else ''
     
-    return ''.join([word for word in sentence.split() if len(word) == max(len(word) for word in sentence.split())])
+    # return ''.join([word for word in sentence.split() if len(word) == max(len(word) for word in sentence.split())])
 
 
 
